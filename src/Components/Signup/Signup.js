@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from '../../Config';
 import { Button, Container, Form, InputField, AuthContainer, Logo, NavigateLink, ErrorMessage } from './SignupStyle'
 import { useNavigate } from 'react-router-dom';
@@ -71,6 +71,15 @@ const Signup = () => {
         });
 
   };
+
+  useEffect(() => {
+    // Checking if a token is present in local storage
+    const token = localStorage.getItem('token');
+    if (token) {
+      navigate('/');
+    }
+  }, []);
+
   return (
     <Container>
       <AuthContainer>

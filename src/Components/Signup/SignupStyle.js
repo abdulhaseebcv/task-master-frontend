@@ -39,6 +39,10 @@ p{
 @media (max-width:500px) {
     width: 90%;
 }
+/* Ensure full width on smaller screens */
+@media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const Logo = styled.img`
