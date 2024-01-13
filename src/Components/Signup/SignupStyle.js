@@ -19,6 +19,7 @@ border-radius: 40px;
 border: 2px solid rgb(23, 24, 35);
 background-color: rgb(23, 24, 35);
 text-align: center;
+position: absolute;
 p{
     font-weight: 400;
     color: #fff;
